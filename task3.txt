@@ -1,0 +1,35 @@
+Vacancy Approval Process
+Business Overview
+The application recruitment module requires an additional service to execute actions that the head office users perform during a vacancy approval process.
+ There is a defined list of action types that a product owner requested to implement. Potentially, there will be more requested in future.
+Action Types
+ Submit for Approval
+Approve
+Reject
+Functional requirements
+Implement a service (JavaScript class) that is able to execute actions (Submit for Approval, Approve, Reject) applied to a record
+Keep in mind that, potentially, in future the service should be able to execute other type of actions that are not related to approval process or vacancy module.
+ Moreover, it can happen that based on a Record type a behaviour of an action may differ.
+An action should log a message to the console (replace record_id placeholder with an actual record Id)
+Service should have a method which can execute either one action or multiple. Order also makes sense and should be taken into consideration.
+ Possible solution can be found here https://www.freecodecamp.org/news/pipe-and-compose-in-javascript-5b04004ac937/ 
+If you came up with your own solution-it ls also acceptable.
+Assumtions:
+Action can  be either function or object. Up to implementation.
+Additional:
+Let’s assume that action is executed asynchronously, provide an example of this kind of implementation a well 
+Submit for Approval: Submitted for approval Vacancy: {record_id}
+Approve: Approved Record: {record_id}
+Reject: Reject Record: {record_id}
+Testing solution
+The solution should provide RecruitmentSolution.js file with the logic to test a service. Do not create new files, 
+defined your classes inside the received template. As a result of the RecruitmentSolution.js file execution the console should contain next lines:
+Expected console output:
+Submitted for approval Vacancy: SoftwareEngineer0001
+Approved Record: SoftwareEngineer0001
+Submitted for approval Vacancy: FrontEndEngineer0020
+Rejected Record: FrontEndEngineer0020
+[Download solution template right here]
+Solution:
+[Send back the completed solution file]
+
